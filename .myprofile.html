@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BHAVANI M Portfolio</title>
+<style>
+Body {
+ Font-family: Arial, sans-serif;
+ Margin: 0;
+ Padding: 0;
+ Background-color: #dfff86;
+ }
+ Header {
+ Background-color: #8e21e7;
+ Color: #fff;
+ Text-align: center;
+ Padding: 2rem 0;
+ Position: relative; /* Add this */
+ }
+ .header-content h1 {
+ Font-size: 2.5rem;
+ }
+ /* Add styles for the round profile picture */
+ .profile-pictures{
+ Width: 200px; /* Adjust the size as needed */
+ Height: 200px;
+ Border-radius: 75%; /* Create a circular shape */
+ Object-fit: cover; /* To ensure the image fills the circular area */
+Position: absolute; /* Add this */
+Top: 40px; /* Adjust top position as needed */
+ Left: 75px; /* Adjust left position as needed */
+ }   
+ nav:hover {
+    color: red;
+ }
+ Nav {
+ Background-color: #38bdd8;
+ Color: #fff;
+ Text-align: center;
+ }
+ Nav ul {
+ List-style-type: none;
+ Padding: 0;
+ }
+ Nav ul li {
+ Display: inline;
+ Margin: 0 20px;
+ }
+ Nav ul li a {
+ Text-decoration: none;
+ Color: #fff;
+ }
+ .section-content {
+ Background-color: #fff;
+ Padding: 2rem;
+ Margin: 1rem;
+ Border-radius: 20px;
+ Box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ Text-align: justify;
+ }
+ .download-button {
+ Background-color: #14f300;
+ Color: #fff;
+ Padding: 0.5rem 1rem;
+ Text-decoration: none;
+ Border-radius: 20px;
+ Display: inline-block;
+ Margin-top: 10px;
+ Align-self: center;
+ }
+ .download-button:hover {
+ Background-color: #5ad84e;
+ }
+Footer {
+ Text-align: center;
+ Padding: 1rem 0;
+ Background-color: #333;
+ Color: #fff;
+ }
+ Ul {
+ List-style-type: disc;
+ Padding-left: 20px;
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <div class="header-content">
+    <img src="IMG-20230327-WA0024 (2).jpg" alt="profile-picture" class="profile-pictures">
+ <h1>BHAVANI M</h1>
+ <p>Student of Alagappa government arts college</p>
+ <p>ALAGAPPA UNIVERSITY</p>
+ <P>KARAIKUDI</P>
+ </div></div>
+ </header>
+ <nav>
+ <ul>
+ <li><a href="#about">About</a></li>
+ <li><a href="#education">Education</a></li>
+ <li><a href="#skills">Skills</a></li>
+ <li><a href="#projects">Projects</a></li>
+ <li><a href="#resume">Resume</a></li>
+ </ul>
+ </nav>
+ <section id="about">
+ <div class="section-content">
+ <h2>About Myself</h2>
+ <p>I'm a computer science student studying final year and i know programming language:</p>
+ <p>c,c++,java,sql database(RDBMS)</p>
+ </div>
+ </section>
+ <section id="education">
+ <div class="section-content">
+ <h2>Education</h2>
+ <p>Alagappa Government arts college</p>
+ <p>B.sc computer science</p>
+ </div>
+ </section>
+ <section id="skills">
+<div class="section-content">
+<h2>Skills</h2>
+ <ul>
+ <li>CyberSecurity</li>
+ <li>Internet of Things</li>
+ <li>Cloud Computing</li>
+ </ul>
+ </div>
+ </section>
+ <section id="project">
+ <div class="section-content">
+ <h2>Projects</h2>
+ <ul>
+ <li><a href="#">AI Based alternator control system</a></li>
+ <li><a href="#">Cloud Security IBM</a></li>
+ <!—Add more project links here 
+ </ul>
+ </div>
+ </section>
+ <section id="resume">
+  <div class="section-content">
+ <center>
+ <h2>Resume</h2>
+ <a href="resume05.pdf" target="_blank" class="download-button">downloadcv</a>
+ </center>
+ </div>
+ </section>
+ <footer>
+ <p>&copy; 2023 BHAVANI M</p>
+ </footer>
+ <script>
+ // Smooth scrolling to section when clicking on navigation links
+ Document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+ Anchor.addEventListener(‘click’, function(e) {
+ e.preventDefault();
+ const targetId = this.getAttribute(‘href’).substring(1);
+ const targetElement = document.getElementById(targetId);
+ if (targetElement) {
+ window.scrollTo({
+ top: targetElement.offsetTop,
+ behavior: ‘smooth’
+});
+}
+});
+ });
+ </script>
+</body>
+</html>
